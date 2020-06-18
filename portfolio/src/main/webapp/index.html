@@ -9,10 +9,27 @@
   <body>
     <div id="content">
       <h1>My Portfolio</h1>
-      <p>This is my portfolio.</p>
+      <p> Hello World, and all that jazz...</p>
+      <p> I'm Tadj, a rising sophomore at Howard University.  </p>
+      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+      <p> Projects  </p>
+      <a href = "https://github.com/TadjAdams"> If you want to check out my socials</a>
       <p>Click here to get a random message:</p>
       <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div>
+        <div id="greeting-container"></div>
     </div>
+
+    <div id="content">
+        <p> Click below for a piece of sage advice: </p>
+        <button onclick="getData()"> Le Sage Advice! </button>
+        <div id="data-container"></div>
+    </div>
+
+    <form action="/text" method="POST">
+      <p>Write a comment, please. But only if you want to, I'm not your boss:</p>
+      <input type="text" name="Comments">
+      <input type="submit" />
+    </form>
+
   </body>
 </html>
