@@ -24,12 +24,21 @@
         <button onclick="getData()"> Le Sage Advice! </button>
         <div id="data-container"></div>
     </div>
-
-    <form action="/text" method="POST">
-      <p>Write a comment, please. But only if you want to, I'm not your boss:</p>
-      <input type="text" name="Comments">
-      <input type="submit" />
-    </form>
-
-  </body>
+    <div id="content">
+        <form action="/text" method="POST">
+        <p>Write a comment, please. But only if you want to, I'm not your boss:</p>
+        <input type="text" name="Comments">
+        <input type="submit" />
+        </form>
+    </div>
+    <div>
+      <title>Simple Map</title>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAG-wPcf6fKRU0dIzTeRsGMhAeGDiHPAyk&callback=initMap&libraries=&v=weekly"
+        defer
+      ></script>
+      <link rel="stylesheet" type="text/css" href="./style.css" />
+    </div>
+    <body>
+        <div id="map"></div>
+    </body>
 </html>

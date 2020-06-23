@@ -1,5 +1,4 @@
 
-<link href='https://fonts.googleapis.com/css?family=Archivo Black' rel='stylesheet'>;
 
 #content {
   margin-left: auto;
@@ -13,3 +12,14 @@
 body {
     background-color: rgb(200,200,200);
     }
+#map {
+  height: 75%;
+}
+
+/* Optional: Makes the sample page fill the window. */
+html,
+body {
+  height: 75%;
+  margin: 0;
+  padding: 0;
+}
