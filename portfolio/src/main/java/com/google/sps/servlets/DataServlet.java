@@ -30,7 +30,6 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.Arrays;
 
 
-
 /** Servlet that returns some example content. TODO: modify this file to handle comments data */
 @WebServlet("text/html")
 public class DataServlet extends HttpServlet {
@@ -39,18 +38,14 @@ public class DataServlet extends HttpServlet {
 
   @Override
   public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
-    //response.setContentType("text/html");
-
     Query query = new Query("Task").addSort("timestamp", SortDirection.DESCENDING);
     DatastoreService datastore = DatastoreServiceFactory.getDatastoreService();
     PreparedQuery results = datastore.prepare(query);
     for (Entity entity : results.asIterable()) {
+      response.setContentType("application/json;");
+    }
+  }
 
-    //PreparedQuery results = datastore.prepare(query);
-        
-    response.setContentType("application/json;");
-  }
-  }
   @Override
   public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
     // Get the input from the form.
@@ -64,6 +59,5 @@ public class DataServlet extends HttpServlet {
     datastore.put(taskEntity); 
     
     response.sendRedirect("/index.html");
-
   }
 }
