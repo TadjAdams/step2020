@@ -10,7 +10,7 @@
   margin-top: 20px;
 }
 body {
-    background-color: rgb(200,200,200);
+    background-color: rgb(203, 238, 255);
     }
 #map {
   height: 75%;
@@ -20,6 +20,6 @@ body {
 html,
 body {
   height: 75%;
-  margin: 0;
+  margin: auto;
   padding: 0;
 }
